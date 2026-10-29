@@ -1,0 +1,7 @@
+dataset,record_id,field,rule_id,severity,observed_value,message,status
+participants,P006,age_years,DM002,ERROR,250,Age outside the fictional range 18–100; verify against source.,OPEN
+participants,P007,consent_date,DM003,CRITICAL,,Consent date missing/invalid; verify before relying on record.,OPEN
+treatment_assignments,ASG005,assignment_date,DM006,ERROR,2026-02-20,Arm assigned before configured effective date.,OPEN
+visits,V012,visit_type,DM008,ERROR,WEEK12,Visit not configured for this protocol version.,OPEN
+visits,V013,participant_id + visit_type,DM010,REVIEW,P004/BASELINE/1,Possible duplicate; also inspect V006. Repeats may be allowed.,OPEN
+assessments,OUT004,fatigue_score,DM012,ERROR,13,Score must be integer 0–10 in this fictional study.,OPEN

@@ -1,0 +1,24 @@
+{
+  "study_id": "SYN-ADAPT-01",
+  "export_version": "demo-1",
+  "visits": [
+    {
+      "visit_id": "API-V001",
+      "participant_id": "P008",
+      "visit_type": "WEEK4",
+      "planned_date": "2026-04-06",
+      "actual_date": "2026-04-06",
+      "visit_status": "completed",
+      "protocol_version": 2
+    },
+    {
+      "visit_id": "API-V002",
+      "participant_id": "P006",
+      "visit_type": "WEEK4",
+      "planned_date": "2026-04-01",
+      "actual_date": null,
+      "visit_status": "missed",
+      "protocol_version": 2
+    }
+  ]
+}

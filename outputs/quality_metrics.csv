@@ -1,0 +1,7 @@
+metric,value,definition
+participants_total,8,Participant records
+visits_total,13,Visit records
+visits_completed,12,Completed visits
+visits_missed,1,Missed visits
+open_findings_total,6,Open findings needing review
+critical_findings,1,Critical findings

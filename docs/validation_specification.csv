@@ -1,0 +1,15 @@
+rule_id,dataset,field,rule,why_it_matters,expected_action
+DM001,participants,participant_id,Must be unique,Duplicate identities may mix records,Investigate; do not merge automatically
+DM002,participants,age_years,Must be 18-100 in this fictional study,Flags implausible/mistyped values,Verify against source
+DM003,participants,consent_date,Must not be missing,Consent documentation is fundamental,Verify before relying on record
+DM004,participants,enrolment_date,Must be on/after consent date,Date sequence should be plausible,Investigate chronology
+DM005,treatment_assignments,participant_id,Must reference known participant,Prevents orphan records,Investigate ID
+DM006,treatment_assignments,arm_code,Must be configured for protocol version/effective date,Prevents premature/invalid arm use,Check approved configuration
+DM007,visits,participant_id,Must reference known participant,Prevents orphan visits,Investigate ID
+DM008,visits,visit_type,Must be configured for version/effective date,Prevents misclassified visit,Check protocol/config
+DM009,visits,actual_date,Completed visit needs actual date,Required to interpret visit,Raise query
+DM010,visits,participant and visit type,Possible duplicates require review,May be duplicate or permitted repeat,Investigate; do not delete automatically
+DM011,assessments,visit_id,Must reference known visit,Prevents orphan outcomes,Investigate relationship
+DM012,assessments,fatigue_score,Must be integer 0-10,Flags out of range values,Check source; do not cap automatically
+DM013,visits,actual_date,Should not precede consent,Date sequence matters,Investigate
+DM014,visits,assessment,Completed visit should have an assessment in this simplified demo,Completeness check,Query candidate

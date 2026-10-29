@@ -1,0 +1,3 @@
+query_id,source_dataset,record_id,field,rule_id,query_text,date_raised,owner,response,resolution,status,date_closed
+Q001,participants,P006,age_years,DM002,"Please verify the recorded age against the source record and confirm the correct value; do not change it based on this automated flag alone.",2026-03-15,Site Team,,Pending,OPEN,
+Q002,treatment_assignments,ASG005,assignment_date,DM006,"Please confirm the applicable approved protocol version and assignment date for arm C.",2026-03-15,Trial Manager,,Pending,OPEN,
