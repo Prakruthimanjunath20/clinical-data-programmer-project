@@ -1,0 +1,21 @@
+dataset,field,type,required,description,example
+participants,participant_id,string,yes,Unique study participant ID,P001
+participants,site_id,string,yes,Recruiting site code,SITE-01
+participants,age_years,integer,yes,Age in years; demo range 18-100,54
+participants,consent_date,date,yes,Date consent was documented,2026-01-03
+participants,enrolment_date,date,yes,Date enrolled,2026-01-04
+treatment_assignments,assignment_id,string,yes,Unique assignment ID,ASG001
+treatment_assignments,participant_id,string,yes,Assigned participant,P001
+treatment_assignments,arm_code,string,yes,Configured arm code,A
+treatment_assignments,assignment_date,date,yes,Date of assignment,2026-01-05
+treatment_assignments,protocol_version,integer,yes,Protocol version used,1
+visits,visit_id,string,yes,Unique visit record,V001
+visits,participant_id,string,yes,Participant attending,P001
+visits,visit_type,string,yes,Visit/event type,BASELINE
+visits,planned_date,date,yes,Planned visit date,2026-01-05
+visits,actual_date,date,conditional,Actual date if completed,2026-01-05
+visits,visit_status,string,yes,completed missed or scheduled,completed
+visits,protocol_version,integer,yes,Protocol version for the visit,1
+assessments,assessment_id,string,yes,Unique assessment row,OUT001
+assessments,visit_id,string,yes,Visit being assessed,V001
+assessments,fatigue_score,integer,yes,Fictional score from 0 to 10,4
